@@ -6,25 +6,21 @@ body {
   background-color: rgba(0, 255, 128, 0.58);
 }
 #on {
-  border: 2px black solid;
   background-image: url("/projeto_1/imagem_sabor_refri/Abacate-refrigerante-foregroundBlur.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-attachment: scroll;
   display: grid;
   grid-template: 100%/ 10% 80% 10%;
   margin: 10px;
   align-items: center;
   justify-items: center;
-  animation-name: animacao_fundo;
-  animation-duration: 10s;
 }
 #botao1 {
   grid-area: 1/1/2/2;
 }
-img,
-p {
+img {
   grid-area: 1/2/2/3;
 }
 #botao2 {
@@ -39,17 +35,10 @@ p {
   font-size: 1.5em;
   background-color: rgba(240, 248, 255, 0.477);
 }
-p {
-  font-family: Helvetica, serif;
-  font-size: 8em;
-  z-index: 1;
-  color: rgba(240, 248, 255, 0.477);
-}
 .botoes:hover {
-  background-color: rgba(12, 203, 12, 0.5);
+  background-color: rgba(20, 2, 2, 0.523);
 }
 img {
-  /* border: solid black 5px; */
   width: 550px;
   margin: auto;
   z-index: 0;
@@ -57,11 +46,15 @@ img {
 #off {
   display: none;
 }
+.animecao {
+  animation-name: animacao_fundo;
+  animation-duration: 5s;
+}
 @keyframes animacao_fundo {
   0% {
-    background-position: bottom;
+    background-position: center -800px;
   }
   100% {
-    background-position: center;
+    background-position: center center;
   }
 }
