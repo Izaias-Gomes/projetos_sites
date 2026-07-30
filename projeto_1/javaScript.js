@@ -80,27 +80,27 @@ function paraFrente() {
   valor1 += 1;
   if (valor1 == 1) {
     munda_tela(
-      tela.morango.t_f,
-      tela.morango.i_i,
-      tela.morango.i_l,
-      tela.morango.i_p,
+      tela.morango.cor_fundo,
+      tela.morango.img_fundo,
+      tela.morango.lata,
+      tela.morango.frase,
     );
     tela_fundo_animada();
   } else if (valor1 == 2) {
     munda_tela(
-      tela.laranga.t_f,
-      tela.laranga.i_i,
-      tela.laranga.i_l,
-      tela.laranga.i_p,
+      tela.laranga.cor_fundo,
+      tela.laranga.img_fundo,
+      tela.laranga.lata,
+      tela.laranga.frase,
     );
     tela_fundo_animada();
   } else {
     valor1 = 0;
     munda_tela(
-      tela.abacate.t_f,
-      tela.abacate.i_i,
-      tela.abacate.i_l,
-      tela.abacate.i_p,
+      tela.abacate.cor_fundo,
+      tela.abacate.img_fundo,
+      tela.abacate.lata,
+      tela.abacate.frase,
     );
     tela_fundo_animada();
   }
