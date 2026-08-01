@@ -69,6 +69,7 @@ img {
   }
   img {
     width: 450px;
+    height: 90vh;
   }
 }
 /* tela de celular */
@@ -83,6 +84,7 @@ img {
   img {
     max-width: 300px;
     min-width: 100px;
+    height: 90vh;
     margin: auto;
   }
   .botoes {
@@ -105,8 +107,6 @@ img {
     background-color: rgba(255, 255, 255, 0.5);
     align-items: stretch;
     flex: auto;
-    /* flex-shrink: 1;
-    flex-grow: 1; */
   }
   .tela_mostrado {
     background-color: rgba(0, 0, 0, 0.5);

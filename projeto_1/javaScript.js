@@ -127,11 +127,14 @@ function paraFrente() {
 tela_fundo_animada();
 /* paramento da função da botão esquerdo e direito*/
 let valor1 = 0;
+let lagura_tela = innerWidth;
 let barra_celular = document.querySelectorAll(".barra");
 let botao1 = document.getElementById("botao1");
 botao1.addEventListener("click", volta);
 let botao2 = document.getElementById("botao2");
 botao2.addEventListener("click", paraFrente);
 //tela de celular
-document.addEventListener("touchstart", volta);
-document.addEventListener("touchend", paraFrente);
+if (lagura_tela <= 600) {
+  document.addEventListener("touchstart", volta);
+  document.addEventListener("touchend", paraFrente);
+}
