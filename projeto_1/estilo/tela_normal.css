@@ -50,11 +50,64 @@ img {
   animation-name: animacao_fundo;
   animation-duration: 5s;
 }
+#barras {
+  display: none;
+}
 @keyframes animacao_fundo {
   0% {
     background-position: center -800px;
   }
   100% {
     background-position: center center;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  #on {
+    width: 100%;
+    background-size: cover;
+  }
+  img {
+    width: 450px;
+  }
+}
+/* tela de celular */
+@media screen and (max-width: 600px) {
+  #on {
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  img {
+    max-width: 300px;
+    min-width: 100px;
+    margin: auto;
+  }
+  .botoes {
+    display: none;
+  }
+  /* barra de tela mostrado */
+  #barras {
+    width: 90%;
+    height: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  }
+  .barra {
+    height: 8px;
+    margin: 3px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-items: stretch;
+    flex: auto;
+    /* flex-shrink: 1;
+    flex-grow: 1; */
+  }
+  .tela_mostrado {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }

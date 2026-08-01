@@ -24,7 +24,7 @@ const tela = {
 
 //munda a cor de fundo, imagem de fundo e imagem da lata;
 
-function munda_tela(fundo, imagem, lata, frase) {
+function munda_tela(fundo, imagem, lata, frase, numero_borra) {
   //munda cor de fundo para orange;
   let tela_fundo = document.querySelector("body");
   tela_fundo.style.backgroundColor = fundo;
@@ -56,6 +56,9 @@ function volta() {
     );
     // primeira_tela();
     tela_fundo_animada();
+    barra_celular[1].classList.add("tela_mostrado");
+    barra_celular[0].classList.remove("tela_mostrado");
+    barra_celular[2].classList.remove("tela_mostrado");
   } else if (valor1 == 2) {
     munda_tela(
       tela.morango.cor_fundo,
@@ -63,6 +66,9 @@ function volta() {
       tela.morango.lata,
       tela.morango.frase,
     );
+    barra_celular[2].classList.add("tela_mostrado");
+    barra_celular[0].classList.remove("tela_mostrado");
+    barra_celular[1].classList.remove("tela_mostrado");
     tela_fundo_animada();
   } else {
     valor1 = 0;
@@ -73,6 +79,9 @@ function volta() {
       tela.abacate.frase,
     );
     tela_fundo_animada();
+    barra_celular[0].classList.add("tela_mostrado");
+    barra_celular[1].classList.remove("tela_mostrado");
+    barra_celular[2].classList.remove("tela_mostrado");
   }
 }
 // função do botão2 direito
@@ -86,6 +95,9 @@ function paraFrente() {
       tela.morango.frase,
     );
     tela_fundo_animada();
+    barra_celular[1].classList.add("tela_mostrado");
+    barra_celular[0].classList.remove("tela_mostrado");
+    barra_celular[2].classList.remove("tela_mostrado");
   } else if (valor1 == 2) {
     munda_tela(
       tela.laranga.cor_fundo,
@@ -94,6 +106,9 @@ function paraFrente() {
       tela.laranga.frase,
     );
     tela_fundo_animada();
+    barra_celular[2].classList.add("tela_mostrado");
+    barra_celular[0].classList.remove("tela_mostrado");
+    barra_celular[1].classList.remove("tela_mostrado");
   } else {
     valor1 = 0;
     munda_tela(
@@ -103,13 +118,20 @@ function paraFrente() {
       tela.abacate.frase,
     );
     tela_fundo_animada();
+    barra_celular[0].classList.add("tela_mostrado");
+    barra_celular[1].classList.remove("tela_mostrado");
+    barra_celular[2].classList.remove("tela_mostrado");
   }
 }
 // animação da tela de abacaxi
 tela_fundo_animada();
 /* paramento da função da botão esquerdo e direito*/
 let valor1 = 0;
+let barra_celular = document.querySelectorAll(".barra");
 let botao1 = document.getElementById("botao1");
 botao1.addEventListener("click", volta);
 let botao2 = document.getElementById("botao2");
 botao2.addEventListener("click", paraFrente);
+//tela de celular
+document.addEventListener("touchstart", volta);
+document.addEventListener("touchend", paraFrente);
