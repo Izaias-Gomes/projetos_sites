@@ -6,7 +6,7 @@ body {
   background-color: rgba(0, 255, 128, 0.58);
 }
 #on {
-  background-image: url("../imagem_sabor_refri/Abacate-refrigerante-foregroundBlur.png");
+  background-image: url("./imagem_sabor_refri/Abacate-refrigerante-foregroundBlur.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
