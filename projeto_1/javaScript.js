@@ -2,21 +2,21 @@ const tela = {
   laranga: {
     cor_fundo: "orange",
     img_fundo:
-      'url("./imagem_sabor_refri/Laranja-refrigerante-foregroundBlur.png")',
+      'url("imagem_sabor_refri/Laranja-refrigerante-foregroundBlur.png")',
     lata: "imagem_sabor_refri/Laranja-refrigerante.png",
     frase: "lata de laranja",
   },
   morango: {
     cor_fundo: "rgb(238, 55, 55)",
     img_fundo:
-      'url("./imagem_sabor_refri/Morango-refrigerante-foregroundBlur.png")',
+      'url("imagem_sabor_refri/Morango-refrigerante-foregroundBlur.png")',
     lata: "imagem_sabor_refri/Morango-refrigerante.png",
     frase: "lata de morango",
   },
   abacate: {
     cor_fundo: "rgba(0, 255, 128, 0.58)",
     img_fundo:
-      'url("./imagem_sabor_refri/Abacate-refrigerante-foregroundBlur.png")',
+      'url("imagem_sabor_refri/Abacate-refrigerante-foregroundBlur.png")',
     lata: "imagem_sabor_refri/Abacate-refrigerante.png",
     frase: "lata de abacate",
   },
