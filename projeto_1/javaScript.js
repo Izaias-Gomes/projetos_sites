@@ -129,12 +129,8 @@ tela_fundo_animada();
 let valor1 = 0;
 let lagura_tela = innerWidth;
 let barra_celular = document.querySelectorAll(".barra");
+//tela de celular
 let botao1 = document.getElementById("botao1");
 botao1.addEventListener("click", volta);
 let botao2 = document.getElementById("botao2");
 botao2.addEventListener("click", paraFrente);
-//tela de celular
-if (lagura_tela <= 600) {
-  document.addEventListener("touchstart", volta);
-  document.addEventListener("touchend", paraFrente);
-}
